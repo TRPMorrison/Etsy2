@@ -10,3 +10,26 @@
 
 // // Prepend
 // $('.container').prepend('<a href="http://google.com">Google</a>');
+
+
+
+
+
+
+//generate sidebar categories
+
+//return the arrays of taxonomies
+var sidebar = etsy.results.map(function (item) {
+  return item.taxonomy_path;
+});
+
+//loop through the taxonimoies and add them to an
+// array when as long as they are not already added
+var sidebarItems = [];
+sidebar.forEach( function (list) {
+  list.forEach( function (item) {
+    if (sidebarItems.indexOf(item) === -1) {
+      sidebarItems.push(item);
+    }
+  });
+});
