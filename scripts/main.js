@@ -33,3 +33,20 @@ sidebar.forEach( function (list) {
     }
   });
 });
+
+
+//REFERENCE TO MY UL
+var sideBarUL = $('#sideBarCats');
+
+sidebarItems.forEach( function (sbItem) {
+
+sideBarUL.append("<li><a href='#'>" + sbItem + "</a></li>");
+});//grayed out section of <li>
+
+
+
+var itemCont = $('.items');
+etsy.results.forEach( function (item) {
+
+  itemCont.append("<div class='item'><h3>" + item.title + "</h3></div>");
+})});//grayed out section of <div class="item">
