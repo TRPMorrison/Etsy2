@@ -17,4 +17,10 @@ section {
     @include span-columns(4);
   }
 
+  li.block {
+    @include outer-container;
+  @include span-columns(3);
+  @include omega(4n);
+}
+
 }

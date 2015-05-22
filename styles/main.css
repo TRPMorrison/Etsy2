@@ -32,3 +32,21 @@ section {
     width: 31.76157%; }
     section .sidebar:last-child {
       margin-right: 0; }
+  section li.block {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    section li.block::after {
+      clear: both;
+      content: "";
+      display: table; }
+    section li.block:last-child {
+      margin-right: 0; }
+    section li.block:nth-child(4n) {
+      margin-right: 0; }
+    section li.block:nth-child(4n+1) {
+      clear: left; }
