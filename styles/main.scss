@@ -1,0 +1,20 @@
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
+
+.container {
+  width: 1080px;
+  margin: 50px auto;
+}
+
+section {
+  @include outer-container();
+
+  .content {
+    @include span-columns(8);
+  }
+
+  .sidebar {
+    @include span-columns(4);
+  }
+
+}
